@@ -7,6 +7,7 @@
 //
 
 #import "UIImage+HFFoundation.h"
+@class AppDelegate;
 
 @implementation UIImage (HFFoundation)
 
@@ -51,4 +52,16 @@
     return image;
 }
 
+
++ (UIImage *)hf_imageNamed:(NSString *)name bundleNamed:(NSString *)bundle {
+    if (!name) {
+        return nil;
+    }
+    NSBundle *mainBundle = [NSBundle bundleForClass:NSClassFromString(@"HFFoundation")];
+    NSURL *bundleURL = [mainBundle URLForResource:bundle withExtension:@"bundle"];
+    NSBundle *targetBundle = [NSBundle bundleWithURL:bundleURL];
+    NSString *imagePath = [[[targetBundle resourcePath] stringByAppendingPathComponent:name] stringByAppendingPathExtension:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+    return image;
+}
 @end

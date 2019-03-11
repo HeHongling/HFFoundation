@@ -35,18 +35,12 @@ fprintf(stderr, "%s %s  %s\n", dateStr.UTF8String, __PRETTY_FUNCTION__, [[NSStri
 }while(0)
 
 //------------------------------常用尺寸------------------------------
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 // 当前Xcode支持iOS8及以上
-#define HFScreen_Width ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.width)
-#define HFScreen_Height ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.height)
-#define HFScreen_Size ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale,[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale):[UIScreen mainScreen].bounds.size)
-#else
 #define HFScreen_Width [UIScreen mainScreen].bounds.size.width
 #define HFScreen_Height [UIScreen mainScreen].bounds.size.height
 #define HFScreen_Size [UIScreen mainScreen].bounds.size
-#endif
 
-#define HFScaleFrom_iPhone5_Desgin(_X_) (_X_ * (HFScreen_Width/320))
-#define HFScaleFrom_iPhone6_Design(_X_) (_X_ * (HFScreen_Width/375))
+#define HFPixel_Size_From_iPhone6(x) ((x)*HFScreen_Width/750)
+#define HFPoint_Size_From_iPhone6(x) ((x)*HFScreen_Width/375)
 #define HFLayout_Margin 8
 #define HFStatusBar_Height 20
 #define HFNavigationBar_Height 44

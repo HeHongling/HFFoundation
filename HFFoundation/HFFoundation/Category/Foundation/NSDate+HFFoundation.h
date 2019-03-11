@@ -8,17 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate (HFFoundation)
-
-@end
-
 
 @interface NSDate (HFFoundation_String)
-/// 转换成 NSString
-+ (NSString *)stringWithDate:(NSDate *)date format:(NSString *)format;
+@property (nonatomic, copy) NSString *hf_defaultFormat;
+@property (nonatomic, copy) NSString *hf_thisYearFormat;
+@property (nonatomic, copy) NSString *hf_thisDayFormat;
 
 /// 转换成 NSString
-- (NSString *)stringWithFormat:(NSString *)format;
+- (NSString *)hf_description;
+
+/// 转换成 NSString
+- (NSString *)hf_stringWithFormat:(NSString *)format;
 @end
 
 

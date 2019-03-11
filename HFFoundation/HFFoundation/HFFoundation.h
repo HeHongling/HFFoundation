@@ -43,7 +43,6 @@
 #import "HFButton.h"
 #import "HFLogView.h"
 #import "HFFPSLabel.h"
-#import "HFCountDownButton.h"
 
 ///------------------------------
 /// @name Utility

@@ -18,4 +18,5 @@
 
 + (UIImage *)hf_imageWithColor:(UIColor *)color size:(CGSize)size alpha:(CGFloat)alpha;
 
++ (UIImage *)hf_imageNamed:(NSString *)name bundleNamed:(NSString *)bundle;
 @end
