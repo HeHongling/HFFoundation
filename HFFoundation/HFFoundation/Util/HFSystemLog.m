@@ -29,7 +29,7 @@
     }
     
     NSString *logDirectory = [self directoryInDocumentWithName:@"Log"];
-    NSString *dateStr = [[NSDate date] stringWithFormat:@"yyyy-MM-dd-HHmmss"];
+    NSString *dateStr = [[NSDate date] hf_stringWithFormat:@"yyyy-MM-dd HH:mm:ss"];
     NSString *logFile = [logDirectory stringByAppendingFormat:@"/%@.log", dateStr];
 
     // 输出到文件
