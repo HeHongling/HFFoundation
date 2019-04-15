@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FFFD5FC226497870054DB91 /* NSObject+HFFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFD5FB226497870054DB91 /* NSObject+HFFoundation.m */; };
 		BA2E05A820ACF19F0019E949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2E05A720ACF19F0019E949 /* AppDelegate.m */; };
 		BA2E05AB20ACF19F0019E949 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2E05AA20ACF19F0019E949 /* ViewController.m */; };
 		BA2E05AE20ACF19F0019E949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2E05AC20ACF19F0019E949 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FFFD5FA226497870054DB91 /* NSObject+HFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HFFoundation.h"; sourceTree = "<group>"; };
+		0FFFD5FB226497870054DB91 /* NSObject+HFFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HFFoundation.m"; sourceTree = "<group>"; };
 		BA2E05A320ACF19F0019E949 /* HFFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HFFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2E05A620ACF19F0019E949 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA2E05A720ACF19F0019E949 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 				BA2E05DA20ACF1FD0019E949 /* UIView+HFFoundation.m */,
 				BA2E05DB20ACF1FD0019E949 /* UIViewController+HFFoundation.h */,
 				BA2E05DC20ACF1FD0019E949 /* UIViewController+HFFoundation.m */,
+				0FFFD5FA226497870054DB91 /* NSObject+HFFoundation.h */,
+				0FFFD5FB226497870054DB91 /* NSObject+HFFoundation.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				BA2E060220ACF1FD0019E949 /* UIImage+HFFoundation.m in Sources */,
 				BA2E060420ACF1FD0019E949 /* UIScrollView+HFFoundation.m in Sources */,
 				BA2E060F20ACF1FD0019E949 /* HFLogView.m in Sources */,
+				0FFFD5FC226497870054DB91 /* NSObject+HFFoundation.m in Sources */,
 				BA2E05FD20ACF1FD0019E949 /* NSObject+HFFoundation.m in Sources */,
 				BA2E060E20ACF1FD0019E949 /* HFFPSLabel.m in Sources */,
 				BA2E05FA20ACF1FD0019E949 /* NSArray+HFFoundation.m in Sources */,
